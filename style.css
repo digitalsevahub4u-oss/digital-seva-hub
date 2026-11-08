@@ -67,3 +67,20 @@
     min-width: 0;
   }
 }
+
+/* CENTER THE FINAL SERVICE CARD ON DESKTOP */
+@media (min-width: 901px) {
+  .service-grid .service-card:last-child {
+    grid-column: 2 / span 2;
+    justify-self: center;
+    width: 50%;
+  }
+}
+
+/* KEEP NORMAL CARD WIDTH ON TABLETS AND MOBILE */
+@media (max-width: 900px) {
+  .service-grid .service-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}
