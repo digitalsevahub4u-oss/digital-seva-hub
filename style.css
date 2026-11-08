@@ -522,3 +522,34 @@ footer .brand-footer {
     padding: 24px 16px;
   }
 }
+
+
+/* FINAL HERO IMAGE CLEANUP */
+.hero-art {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Keep only the new hero image */
+.hero-art > :not(.hero-main-image) {
+  display: none !important;
+}
+
+/* Remove old decorative background effects */
+.hero-art::before,
+.hero-art::after {
+  display: none !important;
+  content: none !important;
+}
+
+.hero-art .hero-main-image {
+  display: block !important;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 22px;
+}
