@@ -553,3 +553,121 @@ footer .brand-footer {
   object-fit: contain;
   border-radius: 22px;
 }
+
+
+/* DIGITAL SEVA HUB - CONTACT AND FOOTER FINAL FIX */
+
+.cta#contact {
+  display: block !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 65px 24px 55px;
+  text-align: center;
+}
+
+.cta#contact .contact-inner {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta#contact .contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 35px auto 0;
+}
+
+.cta#contact .contact-actions a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: min(100%, 390px);
+  min-height: 100px;
+  padding: 20px;
+  border: 2px solid #24d8ff;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #102f55, #071a35);
+  color: #ffffff !important;
+  text-decoration: none;
+  box-shadow: 0 8px 28px rgba(0, 190, 255, 0.13);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta#contact .contact-actions a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 190, 255, 0.25);
+}
+
+.cta#contact .contact-actions a strong {
+  color: #ffd45b;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.cta#contact .contact-actions .contact-whatsapp {
+  border-color: #20d879;
+}
+
+.cta#contact .contact-actions .contact-whatsapp strong {
+  color: #45e58d;
+  font-size: 21px;
+}
+
+/* FOOTER */
+footer {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 25px 4%;
+  border-top: 1px solid rgba(49, 193, 255, 0.35);
+  text-align: center;
+}
+
+footer .brand-footer {
+  justify-self: start;
+  text-align: left;
+}
+
+footer > p {
+  justify-self: center;
+  margin: 0;
+}
+
+footer > small {
+  justify-self: end;
+  text-align: right;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .cta#contact {
+    padding: 45px 16px;
+  }
+
+  .cta#contact .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 16px;
+  }
+
+  footer .brand-footer,
+  footer > p,
+  footer > small {
+    justify-self: center;
+    text-align: center;
+  }
+}
