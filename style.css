@@ -84,3 +84,78 @@
     width: 100%;
   }
 }
+
+
+/* ===================================
+   DIGITAL SEVA HUB - HERO & ABOUT IMAGES
+   =================================== */
+
+/* HERO IMAGE */
+.hero-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-main-image {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid rgba(49, 193, 255, 0.5);
+  box-shadow: 0 15px 45px rgba(0, 160, 255, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+/* Hide old decorative artwork around the new hero image */
+.hero-art .orbit,
+.hero-art .art-card {
+  display: none;
+}
+
+/* ABOUT IMAGE */
+.about-mark {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 22px;
+  aspect-ratio: 1 / 1;
+}
+
+.about-main-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* Make all 16 service cards use normal grid positions */
+.service-grid .service-card:last-child {
+  grid-column: auto;
+  width: 100%;
+  justify-self: stretch;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-art {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .hero-main-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .about-mark {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
