@@ -698,3 +698,23 @@ footer > small {
     object-fit: cover;
   }
 }
+
+
+/* HERO IMAGE - SHOW COMPLETE ARTWORK */
+
+.hero-art {
+  min-height: 0 !important;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.hero-art .hero-main-image {
+  display: block !important;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center;
+  border-radius: 22px;
+}
