@@ -159,3 +159,122 @@
     margin: 0 auto;
   }
 }
+
+
+/* =========================================
+   DIGITAL SEVA HUB - FINAL HERO & ABOUT LAYOUT
+   ========================================= */
+
+/* HERO: IMAGE LEFT, CONTENT RIGHT */
+.hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 45px;
+  min-height: 560px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.hero-art {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-copy {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  max-width: 560px;
+}
+
+.hero-main-image {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid rgba(49, 193, 255, 0.55);
+  box-shadow: 0 15px 45px rgba(0, 160, 255, 0.22);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-art .orbit,
+.hero-art .art-card {
+  display: none;
+}
+
+/* ABOUT: LARGER IMAGE AND BETTER ALIGNMENT */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 45px;
+}
+
+.about-mark {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.about-main-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    min-height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .hero-copy {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  .hero-art {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .hero-main-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-mark {
+    max-width: 280px;
+  }
+}
