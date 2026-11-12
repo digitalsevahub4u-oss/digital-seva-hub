@@ -718,3 +718,52 @@ footer > small {
   object-position: center;
   border-radius: 22px;
 }
+
+
+/* ABOUT SECTION - FINAL POLISH */
+
+.section.about {
+  padding-bottom: 55px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.9fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.about-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-grid > div:last-child {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-main-image {
+    max-width: 260px;
+  }
+
+  .section.about {
+    padding-bottom: 35px;
+  }
+}
