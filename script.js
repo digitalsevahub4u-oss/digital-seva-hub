@@ -39,3 +39,4 @@ document.querySelectorAll(
   img.parentNode.insertBefore(link, img);
   link.appendChild(img);
 });
+
