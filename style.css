@@ -797,3 +797,24 @@ footer > small {
     font-size: 13px !important;
   }
 }
+
+
+/* CLICKABLE IMAGE EFFECT */
+
+.image-open-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.service-card-image,
+.gallery img,
+.hero-main-image,
+.about-main-image {
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+.image-open-link:hover img,
+.gallery a:hover img {
+  transform: scale(1.035);
+}
