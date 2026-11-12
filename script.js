@@ -18,3 +18,24 @@ document.querySelector('#copyBrief').addEventListener('click', async () => {
     document.querySelector('#copyStatus').textContent = brief;
   }
 });
+
+
+/* MAKE SERVICE AND PORTFOLIO IMAGES CLICKABLE */
+
+document.querySelectorAll(
+  '.service-card-image, .gallery img, .hero-main-image, .about-main-image'
+).forEach(function(img) {
+
+  // Do not create another link if one already exists
+  if (img.closest('a')) return;
+
+  const link = document.createElement('a');
+  link.href = img.currentSrc || img.src;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.title = 'Click to view full-size image';
+  link.className = 'image-open-link';
+
+  img.parentNode.insertBefore(link, img);
+  link.appendChild(img);
+});
