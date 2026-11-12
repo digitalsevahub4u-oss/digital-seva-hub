@@ -767,3 +767,33 @@ footer > small {
     padding-bottom: 35px;
   }
 }
+
+
+/* SERVICES - IMPROVED TEXT READABILITY */
+
+.service-card h3 {
+  font-size: 16px !important;
+  line-height: 1.5;
+  margin: 12px 0 8px;
+}
+
+.service-card p {
+  font-size: 13px !important;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.service-card a {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .service-card h3 {
+    font-size: 15px !important;
+  }
+
+  .service-card p {
+    font-size: 13px !important;
+  }
+}
