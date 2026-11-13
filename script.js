@@ -21,7 +21,24 @@ document.querySelector('#copyBrief').addEventListener('click', async () => {
 
 
 
-/* MAKE ALL SERVICE AND PORTFOLIO IMAGES CLICKABLE */
+
+/* OPEN EVERY WEBSITE IMAGE WHEN CLICKED */
+
+document.addEventListener('click', function(event) {
+  const img = event.target.closest(
+    '.service-card-image, .gallery img, .hero-main-image, .about-main-image'
+  );
+
+  if (!img) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  const imageURL = img.currentSrc || img.src;
+
+  window.open(imageURL, '_blank', 'noopener');
+}, true);
+
 
 function enableImageClicking() {
   document.querySelectorAll(
