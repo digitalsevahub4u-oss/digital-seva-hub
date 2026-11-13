@@ -819,3 +819,21 @@ footer > small {
   transform: scale(1.035);
 }
 
+
+/* STRONGER SERVICE TEXT SIZE */
+.services .service-card h3,
+.service-card h3 {
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+}
+
+.services .service-card p,
+.service-card p {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: #c6d7ed !important;
+}
+
+.service-card a {
+  font-size: 14px !important;
+}
