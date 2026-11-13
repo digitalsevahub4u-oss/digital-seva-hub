@@ -20,23 +20,32 @@ document.querySelector('#copyBrief').addEventListener('click', async () => {
 });
 
 
-/* MAKE SERVICE AND PORTFOLIO IMAGES CLICKABLE */
 
-document.querySelectorAll(
-  '.service-card-image, .gallery img, .hero-main-image, .about-main-image'
-).forEach(function(img) {
+/* MAKE ALL SERVICE AND PORTFOLIO IMAGES CLICKABLE */
 
-  // Do not create another link if one already exists
-  if (img.closest('a')) return;
+function enableImageClicking() {
+  document.querySelectorAll(
+    '.service-card-image, .gallery img, .hero-main-image, .about-main-image'
+  ).forEach(function(img) {
 
-  const link = document.createElement('a');
-  link.href = img.currentSrc || img.src;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.title = 'Click to view full-size image';
-  link.className = 'image-open-link';
+    // Keep images that already have a link
+    if (img.closest('a')) return;
 
-  img.parentNode.insertBefore(link, img);
-  link.appendChild(img);
-});
+    const link = document.createElement('a');
+    link.href = img.getAttribute('src');
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.title = 'Click to view full-size image';
+
+    img.parentNode.insertBefore(link, img);
+    link.appendChild(img);
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', enableImageClicking);
+} else {
+  enableImageClicking();
+}
+
 
