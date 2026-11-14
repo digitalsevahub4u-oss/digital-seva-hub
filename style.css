@@ -895,3 +895,66 @@ footer > small {
     min-width: 43px;
   }
 }
+
+/* PREMIUM ABOUT FEATURE CARDS */
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.value-card {
+  padding: 22px 18px;
+  border: 1px solid rgba(49, 193, 255, 0.3);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #102c50, #091a34);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  border-color: #25cfff;
+}
+
+.value-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffc344, #ff9635);
+  color: #07152e;
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.value-card b {
+  display: block;
+  color: #ffc344;
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+
+.value-card strong {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.value-card small {
+  display: block;
+  color: #b9c9df;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+}
