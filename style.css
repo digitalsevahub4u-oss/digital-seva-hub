@@ -837,3 +837,34 @@ footer > small {
 .service-card a {
   font-size: 14px !important;
 }
+
+/* DIGITAL SEVA HUB - SHOW COMPLETE OFFICIAL LOGO */
+
+.about-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.about-main-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  max-height: 420px;
+  object-fit: contain !important;
+  object-position: center;
+  border-radius: 0;
+}
+
+@media (max-width: 600px) {
+  .about-mark {
+    padding: 12px;
+  }
+
+  .about-main-image {
+    max-height: 320px;
+  }
+}
