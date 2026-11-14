@@ -1079,3 +1079,43 @@ footer > small {
     height: 190px;
   }
 }
+
+/* DIGITAL SEVA HUB - PROCESS IMAGES */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+.process-step {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.process-image {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-image {
+    height: 190px;
+  }
+}
