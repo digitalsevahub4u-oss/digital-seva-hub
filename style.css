@@ -1035,3 +1035,47 @@ footer > small {
     grid-template-columns: 1fr;
   }
 }
+
+/* ABOUT SECTION - IMAGE FEATURE CARDS */
+
+.value-card {
+  overflow: hidden;
+  padding: 0 0 20px;
+}
+
+.value-card-image {
+  display: block;
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 13px;
+  margin-bottom: 17px;
+}
+
+.value-card > b,
+.value-card > strong,
+.value-card > small {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.value-card > b {
+  color: #ffc344;
+  font-size: 12px;
+}
+
+.value-card > strong {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.value-card > small {
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .value-card-image {
+    height: 190px;
+  }
+}
