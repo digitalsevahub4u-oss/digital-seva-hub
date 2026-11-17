@@ -97,13 +97,14 @@
   justify-content: center;
 }
 
+
 .hero-main-image {
   display: block;
   width: 100%;
-  max-width: 520px;
-  aspect-ratio: 16 / 9;
+  max-width: 650px;
   height: auto;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
   border-radius: 22px;
   border: 1px solid rgba(49, 193, 255, 0.5);
   box-shadow: 0 15px 45px rgba(0, 160, 255, 0.2);
