@@ -1168,3 +1168,26 @@ footer > small {
     grid-template-columns: 1fr;
   }
 }
+
+.trust-strip {
+  width: 100%;
+  padding: 25px 4%;
+  background: #07152e;
+  box-sizing: border-box;
+}
+
+.trust-strip img {
+  display: block;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  margin: auto;
+  border-radius: 16px;
+  border: 1px solid #087eae;
+}
+
+@media (max-width: 600px) {
+  .trust-strip {
+    padding: 15px 3%;
+  }
+}
