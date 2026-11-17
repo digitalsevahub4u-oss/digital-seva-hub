@@ -1191,3 +1191,22 @@ footer > small {
     padding: 15px 3%;
   }
 }
+
+/* FIX: FULL-WIDTH DIGITAL SEVA HUB BANNER */
+.trust-strip {
+  display: block !important;
+  width: 100% !important;
+  padding: 25px 3% !important;
+  box-sizing: border-box !important;
+  text-align: center;
+}
+
+.trust-strip img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1500px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  border-radius: 16px;
+}
