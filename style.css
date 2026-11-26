@@ -1212,3 +1212,66 @@ footer > small {
   object-fit: contain !important;
   border-radius: 16px;
 }
+
+/* TELUGU + ENGLISH BANNER */
+.telugu-availability {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 28px 24px;
+  margin: 25px auto;
+  max-width: 1200px;
+  text-align: center;
+  background: linear-gradient(120deg, #071b35, #103d61);
+  border: 1px solid #31c1ff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 160, 255, 0.2);
+}
+
+.language-icon {
+  font-size: 42px;
+}
+
+.language-content h2 {
+  color: #42d9ff;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+.language-content p {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.language-content span {
+  color: #ffd15a;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.language-badge {
+  color: #071b35;
+  background: #ffd15a;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .telugu-availability {
+    padding: 22px 14px;
+  }
+
+  .language-content h2 {
+    font-size: 21px;
+  }
+
+  .language-content p {
+    font-size: 16px;
+  }
+}
