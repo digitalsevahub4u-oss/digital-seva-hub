@@ -1275,3 +1275,37 @@ footer > small {
     font-size: 16px;
   }
 }
+
+/* ALL SERVICE IMAGES - COMMON DESIGN */
+.service-card-image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  background: #102844;
+  border: 1px solid rgba(49, 193, 255, 0.35);
+  border-radius: 14px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease;
+}
+
+.service-card-image:hover {
+  transform: scale(1.04);
+}
+
+/* SERVICE CARD IMAGE ALIGNMENT */
+.service-card > a:first-child {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+/* MOBILE IMAGE SIZE */
+@media (max-width: 600px) {
+  .service-card-image {
+    height: 180px;
+  }
+}
