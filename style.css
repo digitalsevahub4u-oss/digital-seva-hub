@@ -1287,36 +1287,44 @@ footer > small {
   }
 }
 
-/* ALL SERVICE IMAGES - COMMON DESIGN */
+/* ALL SERVICE IMAGES - LARGE DISPLAY */
 .service-card-image {
   display: block;
   width: 100%;
-  height: 190px;
+  height: 300px;
   object-fit: contain;
-  background: #102844;
-  border: 1px solid rgba(49, 193, 255, 0.35);
-  border-radius: 14px;
-  padding: 5px;
+  object-position: center;
+  padding: 4px;
   box-sizing: border-box;
-  margin: 0 auto 15px;
-  transition: transform 0.3s ease;
-}
-
-.service-card-image:hover {
-  transform: scale(1.04);
-}
-
-/* SERVICE CARD IMAGE ALIGNMENT */
-.service-card > a:first-child {
-  display: block;
-  width: 100%;
-  overflow: hidden;
+  background: #102844;
+  border: 1px solid #31c1ff;
   border-radius: 14px;
+  margin-bottom: 18px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* MOBILE IMAGE SIZE */
-@media (max-width: 600px) {
+.service-card:hover .service-card-image {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 200, 255, 0.25);
+}
+
+/* TABLET */
+@media (max-width: 900px) {
   .service-card-image {
-    height: 220px;
+    height: 260px;
   }
 }
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .service-card-image {
+    height: 230px;
+  }
+
+  .service-card {
+    min-width: 0;
+  }
+}
+
+
+
